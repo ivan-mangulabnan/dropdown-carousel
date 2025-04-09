@@ -1,0 +1,9 @@
+.hidden {
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: all .1s ease-out;
+}
+
+.visible {
+  transform: scaleY(1);
+}
