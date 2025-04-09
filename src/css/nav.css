@@ -25,6 +25,7 @@ nav {
 }
 
 .dropdown-div {
+  visibility: hidden;
   position: absolute;
   background-color: var(--color-offwhite);
   width: 15rem;
@@ -79,4 +80,8 @@ nav {
 .dropdown button {
   font-size: 1.3rem;
   font-family: var(--font-poppins);
+}
+
+.visible {
+  visibility: visible;
 }
