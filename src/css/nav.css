@@ -21,3 +21,43 @@ header {
   display: flex;
   align-items: center;
 }
+
+nav {
+  position: relative;
+  font-family: var(--font-poppins);
+}
+
+.dropdown-div {
+  position: absolute;
+  background-color: var(--color-offwhite);
+  width: 15rem;
+  height: 12rem;
+  border: 2px solid var(--color-gray200);
+  left: -10px;
+  border-radius: 8px;
+  padding: .5rem;
+}
+
+.dropdown-div::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid var(--color-gray200);
+  top: -15px;
+  left: 17px;
+}
+
+.dropdown-div::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom: 13px solid var(--color-offwhite);
+  top: -12px;
+  left: 19px;
+}
