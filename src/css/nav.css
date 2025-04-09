@@ -1,0 +1,13 @@
+.dropdown-icon {
+  background-image: url("./icons/dots-vertical.svg");
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 3rem;
+  width: 3rem;
+  border-radius: .5rem;
+}
+
+.dropdown-icon:hover {
+  background-color: var(--color-lightgray);
+}
