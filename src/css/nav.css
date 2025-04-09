@@ -1,8 +1,5 @@
 .dropdown-icon {
   background-image: url("./icons/dots-vertical.svg");
-  background-color: transparent;
-  border: none;
-  outline: none;
   height: 3rem;
   width: 3rem;
   border-radius: .5rem;
@@ -35,7 +32,11 @@ nav {
   border: 2px solid var(--color-gray200);
   left: -10px;
   border-radius: 8px;
-  padding: .5rem;
+  padding: .5rem 1rem .5rem .5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
 }
 
 .dropdown-div::before {
@@ -47,7 +48,7 @@ nav {
   border-right: 15px solid transparent;
   border-bottom: 15px solid var(--color-gray200);
   top: -15px;
-  left: 17px;
+  left: 17px; 
 }
 
 .dropdown-div::after {
@@ -60,4 +61,22 @@ nav {
   border-bottom: 13px solid var(--color-offwhite);
   top: -12px;
   left: 19px;
+}
+
+.dropdown {
+  flex: 1;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  padding: 0 1rem;
+}
+
+.dropdown:hover {
+  border-left: 5px solid #495057;
+  background-color: #CED4DA;
+}
+
+.dropdown button {
+  font-size: 1.3rem;
+  font-family: var(--font-poppins);
 }
