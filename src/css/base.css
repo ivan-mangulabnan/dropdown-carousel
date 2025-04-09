@@ -17,4 +17,5 @@ body {
 
 button {
   appearance: none;
+  cursor: pointer;
 }
