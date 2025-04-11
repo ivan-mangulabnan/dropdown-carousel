@@ -1,4 +1,5 @@
 import { Main } from "./dom.js";
+import { Events } from "./events.js";
 
 export function dropdownStyle (activatorEle, targetEle) {
   targetEle.classList.add('hidden');
@@ -35,4 +36,6 @@ export function moveDisplayedImage (eventTarget = null) {
       btn.classList.add('focus-btn');
     }
   })
+
+  Events.startAutoMoveImages();
 }
