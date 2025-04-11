@@ -34,4 +34,12 @@ export class Events {
       }
     })
   }
+
+  static #autoTime;
+
+  static startAutoMoveImages () {
+    clearTimeout(this.#autoTime);
+
+    this.#autoTime = setTimeout(() => moveDisplayedImage(), 5000);
+  }
 }
