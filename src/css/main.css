@@ -25,7 +25,7 @@ main {
   flex: 0 0 auto;
   height: 600px;
   width: 400px;
-  background-position: center;
+  background-size: contain;
 }
 
 .one {
@@ -44,13 +44,21 @@ main {
   width: 400px;
   height: 600px;
   overflow: hidden;
+  border-radius: 5%;
 }
 
 .btn {
   width: 5rem;
   height: 5rem;
-  background-color: var(--color-gray200);
   align-self: center;
+}
+
+.left {
+  background-image: url('./icons/chevron-left.svg');
+}
+
+.right {
+  background-image: url('./icons/chevron-right.svg');
 }
 
 .mini-btn-container {
@@ -63,10 +71,25 @@ main {
 .mini-btn {
   height: 1rem;
   width: 1rem;
-  background-color: var(--color-lightgray);
+  background-color: #000;
   border-radius: 50%;
 }
 
 .focus-btn {
-  background-color: red;
+  height: 1rem;
+  width: 1rem;
+  background-color: #000;
+  border-radius: 50%;
+  position: relative;
+}
+
+.focus-btn::before {
+  content: "";
+  height: 0.5rem;
+  width: 0.5rem;
+  position: absolute;
+  background-color: var(--color-lightgray);
+  border-radius: 50%;
+  bottom: 25%;
+  right: 25%;
 }
