@@ -2,7 +2,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
-  mode: "development",
+  mode: "production",
   entry: "./src/index.js",
   output: {
     filename: "index.js",
@@ -25,5 +25,9 @@ module.exports = {
   devtool: "eval-source-map",
   devServer: {
     watchFiles: ["./src/index.html"]
-  }
+  },
+  performance: {
+    maxAssetSize: 1000000,
+    maxEntrypointSize: 1000000,
+  },
 }
