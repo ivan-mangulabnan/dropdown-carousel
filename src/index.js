@@ -4,3 +4,4 @@ import "./script/nav.js";
 import "./script/main.js";
 
 Events.click();
+Events.startAutoMoveImages();
