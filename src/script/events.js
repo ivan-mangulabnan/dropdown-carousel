@@ -11,6 +11,27 @@ export class Events {
       if (event.target === Main.btnLeft){
         moveDisplayedImage(Main.btnLeft);
       }
+
+      if (event.target.closest('div') === Main.miniBtnContainer) {
+        let imageIndex;
+
+        Array.from(Main.miniBtnContainer.querySelectorAll('button')).forEach((button, index) => {
+          button.classList.remove('focus-btn');
+
+          if (event.target === button) {
+            button.classList.add('focus-btn');
+            imageIndex = index;
+          }
+        })
+
+        Array.from(Main.imageContainer.querySelectorAll('div')).forEach((image, index) => {
+          image.classList.remove('img');
+          
+          if(index == imageIndex) {
+            image.classList.add('img');
+          }
+        })
+      }
     })
   }
 }
