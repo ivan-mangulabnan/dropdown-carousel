@@ -1,0 +1,72 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - var(--header-height));
+  gap: 1rem;
+}
+
+.wrapper {
+  height: 600px;
+  width: 600px;
+
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.img-container {
+  display: flex;
+  height: 100%;
+}
+
+.img {
+  flex: 0 0 auto;
+  height: 600px;
+  width: 400px;
+  background-position: center;
+}
+
+.one {
+  background-image: url("./icons/alvan-nee-ZCHj_2lJP00-unsplash.jpg");
+}
+
+.two {
+  background-image: url("./icons/jae-park-7GX5aICb5i4-unsplash.jpg");
+}
+
+.three {
+  background-image: url("./icons/zoe-gayah-jonker-13ky5Ycf0ts-unsplash.jpg");
+}
+
+.frame {
+  width: 400px;
+  height: 600px;
+  overflow: hidden;
+}
+
+.btn {
+  width: 5rem;
+  height: 5rem;
+  background-color: var(--color-gray200);
+  align-self: center;
+}
+
+.mini-btn-container {
+  width: 100%;
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.mini-btn {
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--color-lightgray);
+  border-radius: 50%;
+}
+
+.focus-btn {
+  background-color: red;
+}
